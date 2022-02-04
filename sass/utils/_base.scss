@@ -1,0 +1,35 @@
+body {
+    color: $primery-text-color;
+    background-color: primery-bg-color;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+img {
+    display: block;
+}

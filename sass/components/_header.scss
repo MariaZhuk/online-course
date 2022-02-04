@@ -1,0 +1,87 @@
+
+// Флекс контейнер для хєддера для размещения
+.container-flex {
+    display: flex;
+    align-items: center;
+
+    .nav__list {
+        display: flex;
+    }
+}
+
+// Лого
+.header-logo {
+    background-image: url(/images/logo.jpg);
+    width: 130px;
+    height: 22px;
+}
+
+// Кнопки хєддера
+
+.container-button-header {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+}
+
+// Расстояние между списком навигации и лого
+.nav__list {
+    margin-left: 60px;
+
+    // Размещение навигационных ссылок хэддера
+    .nav__item + .nav__item {
+        margin-left: 40px;
+    }
+
+    .nav__link {
+        padding-top: 13px;
+        padding-bottom: 13px;
+
+        font-weight: bold;
+        font-size: 16px;
+
+        &:focus,
+        &:hover {
+            color: $accent-text-color;
+        }
+    }
+
+}
+//======= Кнопки в хэддере
+.header__button {
+     padding: 15px 36px;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     background-color: transparent;
+     color: $primery-text-color;
+     font-weight: 700;
+
+     &:hover,
+     &:focus {
+         background: $accent-bgc-button;
+         color: $accent-text-color-button;
+        }
+    
+        &:hover .header__icon,
+        &:focus .header__icon {
+            fill: #fff;
+        }
+    
+}
+
+.header__buttom-register {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+

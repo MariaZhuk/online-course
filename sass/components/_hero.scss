@@ -1,0 +1,120 @@
+.hero {
+    background-image: url(/images/bg-hero.jpg);
+    background-size: contain;
+    margin-top: -88px;
+    padding-top: 228px;
+}
+
+// ======= Для абсолютного позиционирования фоновой картинки героя
+
+.position {
+    position: relative;
+
+}
+
+// ====== Ссылка на ютуб
+
+.youtube__link {
+    padding: 16px;
+
+    &:hover {
+        background-color: pink;
+        border-radius: 50%;
+    }
+}
+
+.youtube__button {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.youtube__text {
+    font-size: 14px;
+    
+}
+
+// ====== Заголовок геро
+.hero__title {
+    width: 496px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+}
+
+//======= Cсылки под заголовком героя
+.hero__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 259px;
+
+    .hero__item:not(:first-child) {
+        margin-left: 24px;
+
+    }
+    
+
+    // ======= стилизация ссылок
+    .hero__link {
+        padding: 13px 40px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        border-color: $border-color-link-button;
+
+        &:hover,
+        &:focus {
+            background: $accent-bgc-button;
+        }
+
+    }
+
+}
+
+// ======= Абсолютное позиционирование фоновой картинки героя
+
+.hero-illustration {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// ======= Раздел с достижениями в цифрах
+.achievements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .achievements__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: orange;
+            top: 26px;
+            right: -66px;
+            
+            
+        }
+    }
+
+    .achievements__number {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+    }
+
+    .achievements__text {
+        font-weight: normal;
+        margin-left: 12px;
+    }
+
+}
+
+
+
