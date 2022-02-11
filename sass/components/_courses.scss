@@ -1,0 +1,56 @@
+.courses__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.courses__item {
+  width: 600px;
+  margin: 15px;
+}
+
+.button-courses {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.courses-info {
+  text-align: start;
+  padding: 32px;
+
+  .speciality {
+    display: inline-flex;
+    padding: 1px 8px;
+    font-size: 14px;
+    font-weight: normal;
+
+    color: #ffffff;
+  }
+  .speciality-marketing {
+    background-color: #03cea4;
+    border-radius: 4px;
+  }
+
+  .speciality-hr {
+    background: #f89828;
+    border-radius: 4px;
+  }
+
+  .speciality-manager {
+    background: #5a87fc;
+    border-radius: 4px;
+  }
+  .speciality-design {
+    background: #f52f6e;
+    border-radius: 4px;
+  }
+}
